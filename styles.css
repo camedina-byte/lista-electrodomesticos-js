@@ -1,0 +1,165 @@
+/* ============================
+   Estilos generales
+   ============================ */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* color suave */
+    margin: 0;
+    padding: 0;
+
+    /* Para centrar el contenido */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ============================
+   Header y Footer
+============================ */
+
+header, footer {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+}
+
+/* ============================
+   Contenedor principal
+============================ */
+
+main {
+    width: 90%;
+    max-width: 600px;
+    margin-top: 20px;
+
+    /* Uso Flexbox para separar secciones */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ============================
+   Tarjetas (card)
+============================ */
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+
+    /* Sombra suave para que parezca tarjeta */
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+}
+
+/* ============================
+   Formulario
+============================ */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+}
+
+/* Efecto cuando el usuario hace click en el input */
+input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Botón agregar */
+#btn-add {
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Hover del botón */
+#btn-add:hover {
+    background-color: #0056b3;
+}
+
+/* Mensaje de error */
+.error {
+    color: red;
+    font-size: 14px;
+}
+
+/* ============================
+   Lista de productos
+============================ */
+
+#product-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Cada producto */
+.producto-item {
+    background-color: #e9eef3;
+    padding: 12px;
+    border-radius: 6px;
+
+    /* Para separar el texto de los botones */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+
+/* Hover para que se vea interactivo */
+.producto-item:hover {
+    background-color: #dce4ec;
+}
+
+/* Producto comprado */
+.producto-item.comprado {
+    background-color: #c8e6c9; /* verde suave */
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+/* ============================
+   Botones de acción
+============================ */
+
+.producto-item button {
+    border: none;
+    padding: 8px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Botón de marcar como comprado */
+.producto-item button:first-of-type {
+    background-color: #4caf50;
+    color: white;
+}
+
+.producto-item button:first-of-type:hover {
+    background-color: #3d8b40;
+}
+
+/* Botón eliminar */
+.producto-item button:last-of-type {
+    background-color: #e53935;
+    color: white;
+}
+
+.producto-item button:last-of-type:hover {
+    background-color: #b71c1c;
+}
