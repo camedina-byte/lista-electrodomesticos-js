@@ -13,6 +13,7 @@ let productos = []; // Lista principal
 // ======================= FUNCIONES REUTILIZABLES =======================
 
 // Actualiza los contadores
+// Prueba
 function actualizarContadores() {
     const total = productos.length;
     const comprados = productos.filter(p => p.comprado).length;
