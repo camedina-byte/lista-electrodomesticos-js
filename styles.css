@@ -145,21 +145,21 @@ input:focus {
 }
 
 /* Botón de marcar como comprado */
-.producto-item button:first-of-type {
+.btn-check {
     background-color: #4caf50;
     color: white;
 }
 
-.producto-item button:first-of-type:hover {
+.btn-check:hover {
     background-color: #3d8b40;
 }
 
 /* Botón eliminar */
-.producto-item button:last-of-type {
+.btn-delete {
     background-color: #e53935;
     color: white;
 }
 
-.producto-item button:last-of-type:hover {
+.btn-delete:hover {
     background-color: #b71c1c;
 }
