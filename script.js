@@ -12,8 +12,8 @@ let productos = []; // Lista principal
 
 // ======================= FUNCIONES REUTILIZABLES =======================
 
-// Actualiza los contadores
-// Prueba
+// Esta función actualiza los contadores cada vez que se agrega, elimina o marca un producto
+
 function actualizarContadores() {
     const total = productos.length;
     const comprados = productos.filter(p => p.comprado).length;
@@ -76,12 +76,16 @@ function agregarProducto(e) {
     };
 
     productos.push(nuevoProducto);
+
+    // Guardo la lista en localStorage para que no se borre al recargar
+
     guardarEnLocalStorage();
     renderizarLista();
     form.reset();
 }
 
 // Marcar como comprado
+
 function marcarComoComprado(index) {
     productos[index].comprado = !productos[index].comprado;
     guardarEnLocalStorage();
