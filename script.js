@@ -24,9 +24,13 @@ function actualizarContadores() {
     countPending.textContent = pendientes;
 }
 
-// Guarda en localStorage
+// Guarda en localStorage, añadi un try-catch para que no se caiga si da error
 function guardarEnLocalStorage() {
-    localStorage.setItem('productos', JSON.stringify(productos));
+    try {
+        localStorage.setItem('productos', JSON.stringify(productos));
+    } catch (e) {
+        console.error('Error al guardar:', e);
+    }
 }
 
 // Crea el elemento visual del producto
