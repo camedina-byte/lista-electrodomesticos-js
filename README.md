@@ -88,5 +88,5 @@ Utilicé IA como apoyo para:
 ## Autor
 
 **Carlos Medina Alvarado**  
-Estudiante de Ingeniería en Sistemas Inteligentes - Universidad Tecnológica ECOTEC  
+Estudiante de Ingeniería en Sistemas Inteligentes - Universidad ECOTEC  
 Proyecto de Programación Web
