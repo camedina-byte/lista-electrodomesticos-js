@@ -39,11 +39,12 @@ function crearElementoProducto(producto, index) {
     li.className = 'producto-item';
     if (producto.comprado) li.classList.add('comprado');
 
-    li.innerHTML = `
+        li.innerHTML = `
         <span>${producto.nombre} (${producto.cantidad})</span>
-        <button onclick="marcarComoComprado(${index})">✔</button>
-        <button onclick="eliminarProducto(${index})">🗑</button>
+        <button class="btn-check" aria-label="Marcar como comprado">✔</button>
+        <button class="btn-delete" aria-label="Eliminar producto">🗑</button>
     `;
+
     //Agrego addEventListener en la funcion crearElementoProducto
     li.querySelector('.btn-check').addEventListener('click', () => marcarComoComprado(index));
     li.querySelector('.btn-delete').addEventListener('click', () => eliminarProducto(index));
