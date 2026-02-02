@@ -1,0 +1,15 @@
+# Java/Oracle JDK
+oracleJdk-25/
+*.dll
+*.jar
+*.dat
+LICENSE
+README
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Node modules
+node_modules/
