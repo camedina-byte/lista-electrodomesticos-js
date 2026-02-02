@@ -67,6 +67,12 @@ function agregarProducto(e) {
         return;
     }
 
+    // Validación adicional: nombre mínimo de 3 caracteres
+    if (nombre.length < 3) {
+        errorMessage.textContent = 'El nombre debe tener al menos 3 caracteres.';
+        return;
+    }
+
     errorMessage.textContent = '';
 
     const nuevoProducto = {
