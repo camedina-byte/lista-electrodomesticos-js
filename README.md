@@ -20,17 +20,20 @@ Crear una aplicación web que permita:
 
 ---
 
-- **HTML5** → estructura semántica
-- **CSS3** → diseño tipo card, Flexbox, estilos hover y focus
+- **HTML** → estructura semántica
+- **CSS** → diseño tipo card, Flexbox, estilos hover y focus
 - **JavaScript** → lógica de la aplicación, manejo del DOM, validaciones y localStorage
-- **Git y GitHub** → control de versiones y publicación del proyecto
+- **GitHub** → control de versiones y publicación del proyecto
 
 ---
 
 ## Funcionalidades 
 
 ### Agregar productos
-El usuario puede ingresar el nombre y la cantidad. Se valida que los campos no estén vacíos y que la cantidad sea mayor a cero.
+El usuario puede ingresar el nombre y la cantidad. Se valida que:
+- Los campos no estén vacíos
+- La cantidad sea mayor a cero
+- El nombre tenga mínimo 3 caracteres
 
 ### Lista dinámica
 Cada producto se agrega al DOM sin recargar la página.
@@ -51,20 +54,39 @@ La app muestra:
 La lista se guarda automáticamente y se recupera al recargar la página.
 
 ---
-
+## Estructura del proyecto
+```
+lista-electrodomesticos-js/
+│
+├── index.html          # Estructura HTML principal
+├── styles.css          # Estilos y diseño
+├── script.js           # Lógica de la aplicación
+├── README.md           # Documentación del proyecto
+└── .gitignore          # Archivos a ignorar en Git
+```
+---
 ## Cómo usar la aplicación
 
-1. Escribe el nombre del electrodoméstico.
-2. Ingresa la cantidad.
-3. Haz clic en **Agregar**.
-4. Usa los botones ✔ y 🗑 para gestionar cada producto.
-5. La lista se guarda sola gracias a localStorage.
+1. Abre `index.html` en tu navegador
+2. Escribe el nombre del electrodoméstico (mínimo 3 caracteres)
+3. Ingresa la cantidad (número mayor a 0)
+4. Haz clic en **Agregar**
+5. Usa el botón ✔ para marcar como comprado
+6. Usa el botón 🗑 para eliminar productos
+7. La lista se guarda automáticamente en localStorage
 
 ---
 ## Uso de IA
 
 Utilicé IA como apoyo para:
 
-- Resolver dudas sobre Git y SSH
+- Resolver dudas sobre Git, control de versiones y .gitignore
+- Implementar mejores prácticas en JavaScript (event listeners, manejo de errores)
 - Mejorar la estructura del HTML, CSS y JavaScript
-- Redactar este README de forma clara y ordenada
+- Aprender sobre accesibilidad web con aria-labels
+
+## Autor
+
+**Carlos Medina Alvarado**  
+Estudiante de Ingeniería en Sistemas Inteligentes - Universidad Tecnológica ECOTEC  
+Proyecto de Programación Web
